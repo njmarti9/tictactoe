@@ -9,6 +9,28 @@
     <script src="tictactoe.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <button id="player">Enter Name</button>
+        <h3 id="winmessage"></h3>
+        <dialog id="playerdialog">
+            <form id="playerform">
+                <label>Enter Name:</label>
+                <input type="text" id="fname" name="fname">
+                <label>Choose X's or O's</label>
+                <select id="type">
+                    <option value="default">X</option>
+                    <option>O</option>
+                </select>
+                <div>
+                    <button value="cancel" formmethod="dialog">Cancel</button>
+                    <button id="confirmBtn" value="default">Confirm</button>
+                  </div>
+            </form>
+        </dialog>
+        <div class="gameboard">
+
+        </div>
+        <button id="restartgame">Restart Game</button>
+    </div>
 </body>
 </html>
